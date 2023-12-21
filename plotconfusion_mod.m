@@ -1,32 +1,4 @@
 function out1 = plotconfusion_mod(varargin)
-%PLOTCONFUSION Plot classification confusion matrix.
-%
-% <a href="matlab:doc plotconfusion">plotconfusion</a>(targets,outputs) takes target and output data and
-% generates a confusion plot. The target data are ground truth labels in
-% 1-of-N form (in each column, a single element is 1 to indicate the
-% correct class, and all other elements are 0). The output data are the
-% outputs from a neural network that performs classification. They can
-% either be in 1-of-N form, or may also be probabilities where each column
-% sums to 1.
-%
-% <a href="matlab:doc plotconfusion">plotconfusion</a>(targets1,outputs1,'name1',targets2,outputs2,'name2',...)
-% generates several confusion plots in one figure, and prefixes the
-% character strings specified by the 'name' arguments to the titles of the
-% appropriate plots.
-%
-% This example shows how to train a pattern recognition network and plot
-% its accuracy.
-%
-%   [x,t] = <a href="matlab:doc simpleclass_dataset">simpleclass_dataset</a>;
-%   net = <a href="matlab:doc patternnet">patternnet</a>(10);
-%   net = <a href="matlab:doc train">train</a>(net,x,t);
-%   y = net(x);
-%   <a href="matlab:doc plotconfusion">plotconfusion</a>(t,y)
-%
-% See also confusion, plotroc, ploterrhist, plotregression.
-
-% Copyright 2007-2015 The MathWorks, Inc.
-
 %% =======================================================
 %  BOILERPLATE_START
 %  This code is the same for all Transfer Functions.
