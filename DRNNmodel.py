@@ -1,12 +1,3 @@
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 26 21:58:40 2021
-
-@author: sbasak
-"""
-
 """
 Drone signals for single-signal classification scenario
 The drone signal can be downloaded from this link
